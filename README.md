@@ -68,20 +68,22 @@ For this step, you can check my kaggle kernel(link: https://www.kaggle.com/shash
 ### Models Trained On
 I tried on different models to get to know indepth about the model, so these are the list of models I used for trainnig
 
-1. K-Nearest Neighbors
+1.T-SNE
 
-2. Naive Bayes
+2. K-Nearest Neighbors
 
-3. Logistic Regression
+3. Naive Bayes
 
-4. Support Vector Machines
+4. Logistic Regression
 
-5. Decision Trees
+5. Support Vector Machines
 
-6. GBDT and Random Forests
+6. Decision Trees
 
-7. LSTM
+7. GBDT and Random Forests
 
-8. Clustering
+8. LSTM
 
-9. TruncatedSVD
+9. Clustering
+
+10. TruncatedSVD
