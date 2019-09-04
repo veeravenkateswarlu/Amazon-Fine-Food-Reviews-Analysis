@@ -68,7 +68,7 @@ For this step, you can check my kaggle kernel(link: https://www.kaggle.com/shash
 ### Models Trained On
 I tried on different models to get to know indepth about the model, so these are the list of models I used for trainnig
 
-1.T-SNE
+1. T-SNE
 
 2. K-Nearest Neighbors
 
