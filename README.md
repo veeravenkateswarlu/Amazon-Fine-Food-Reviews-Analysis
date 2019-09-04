@@ -32,3 +32,58 @@ Given a review, determine whether the review is positive (rating of 4 or 5) or n
 [Q] How to determine if a review is positive or negative?
 
 [Ans] We could use Score/Rating. A rating of 4 or 5 can be cosnidered as a positive review. A rating of 1 or 2 can be considered as negative one. A review of rating 3 is considered nuetral and such reviews are ignored from our analysis. This is an approximate and proxy way of determining the polarity (positivity/negativity) of a review.
+
+## Data Preprocessing
+Note:
+
+These steps are same for every model
+
+In Data Preprocessing we check whether there are any duplicate values, missing values and we deal with them initally. In the Dataset I have found and removed them. As we see from the attribute information, Value of HelpfulnessDenominator should be always greater than value of HelpfulnessNumerator, because HelpfulnessDenominator is the sum of both useful review and not useful review while HelpfulnessNumerator is only the number of users who found the review helpful. So removing records or datapoints that doesnt satisfy this condition.
+
+we are also removing the neutral reviews(3 star reviews) from the dataset for better predicitons, considering 1 & 2 star reviews as negative reviews and 4 % 5 star as positive reviews.
+
+Text Preprocessing: Stemming, Stop-words removal, HTML tags removal, Punctuation marks removal
+
+Now that we have finished deduplication our data requires some preprocessing before we go on further with analysis and making the prediction model.
+
+Hence in the Preprocessing phase we do the following in the order below:-
+
+Begin by removing the html tags
+Remove any punctuations or limited set of special characters like , or . or # etc.
+Check if the word is made up of english letters and is not alpha-numeric
+Check to see if the length of the word is greater than 2 (as it was researched that there is no adjective in 2-letters)
+Convert the word to lowercase
+Remove Stopwords
+Finally Snowball Stemming the word (it was obsereved to be better than Porter Stemming)
+After which we collect the words used to describe positive and negative reviews
+Converting Text into Numerical vectors
+
+For this step, you can check my kaggle kernel(link: https://www.kaggle.com/shashanksai/text-preprocessing-using-python) where I have explained detailly how to convert words into vectors so that algorithm can read them. we have four major vectorizers to convert text ot vectors
+
+* Bag of Words
+* Term Frequency Inverse Document Frequency (TF-IDF)
+* Average Word2Vec
+* TF_IDF Word2Vec (You can also find the optimal codes)
+
+### Models Trained On
+I tried on different models to get to know indepth about the model, so these are the list of models I used for trainnig
+
+1. K-Nearest Neighbors
+
+2. Naive Bayes
+
+3. Logistic Regression
+
+4. Liner Regression
+
+5. Support Vector Machines
+
+6. Decision Trees
+
+7. GBDT and Random Forests
+
+8. LSTM
+
+9. Clustering
+
+10. TruncatedSVD
