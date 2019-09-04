@@ -74,16 +74,14 @@ I tried on different models to get to know indepth about the model, so these are
 
 3. Logistic Regression
 
-4. Liner Regression
+4. Support Vector Machines
 
-5. Support Vector Machines
+5. Decision Trees
 
-6. Decision Trees
+6. GBDT and Random Forests
 
-7. GBDT and Random Forests
+7. LSTM
 
-8. LSTM
+8. Clustering
 
-9. Clustering
-
-10. TruncatedSVD
+9. TruncatedSVD
